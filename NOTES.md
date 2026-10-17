@@ -1,6 +1,6 @@
 # Translation Notes
 
-**Student:** [nafer cortes ]
+**Student:** nafer cortes 
 **Course:** [Inglés I / Inglés II]
 **Date:** [dd/mm/yyyy]
 
