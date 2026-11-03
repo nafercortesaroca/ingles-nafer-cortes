@@ -31,7 +31,7 @@ This file is where you show that you understood those differences.
 Name **one thing** that appears in your Spanish version and does **not** appear
 in your English version. Explain why you removed it.
 
-> [Write 2–4 sentences in English.]
+> I omitted some personal information, such as my phone number and other private details. I decided to remove this information to protect my privacy and keep my portfolio professional.
 
 ---
 
@@ -40,7 +40,7 @@ in your English version. Explain why you removed it.
 Name **one technical term** that you kept in English in both versions.
 Explain why translating it would be a bad idea.
 
-> [Write 2–4 sentences in English.]
+> I kept technical terms such as HTML, CSS, JavaScript, Laravel, PHP, and MySQL in English. These are standard programming terms used internationally, so translating them could make them confusing or less recognizable.
 
 ---
 
