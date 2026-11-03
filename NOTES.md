@@ -50,11 +50,11 @@ Name **one sentence** that was hard to write in English. Copy the Spanish
 version and your English version. Explain what you changed and why a
 word-by-word translation did not work.
 
-> Spanish: [copy your sentence here]
+> Spanish: Sistema web para gestionar repuestos de motocicletas, clientes, proveedores, compras y ventas.
 >
-> English: [copy your sentence here]
+> English:  A web-based system designed to manage motorcycle spare parts, customers, suppliers, purchases, and sales.
 >
-> [Write 2–4 sentences in English explaining the change.]
+> I changed the sentence structure to make it sound more natural in English. I used "designed to manage" instead of translating every word literally. A word-for-word translation would sound less natural and professional
 
 ---
 
