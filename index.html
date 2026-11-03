@@ -1,150 +1,132 @@
 <!DOCTYPE html>
-<!--
-  ============================================================
-  WEB PROFILE TEMPLATE  ·  Técnico Profesional en Programación Web
-  Institución Universitaria de El Espinal - UniEspinal
-  Inglés I / Inglés II
-  ============================================================
-
-  HOW TO USE THIS FILE
-  1. Replace every text inside [square brackets] with your own information.
-  2. Every visible text has a data-i18n attribute. The actual words live in
-     script.js, inside the ES and EN dictionaries. Edit them there.
-  3. Do NOT delete the data-i18n attributes. They connect this file to the
-     language switcher.
-  4. Never add your home address, your phone number or your ID number.
-     A public profile does not need them.
-  ============================================================
--->
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- nafer cortes aroca -->
-  <title>nafer cortes aroca · Web Developer</title>
-  <meta name="description" content="[One short line about you. Example: Junior web developer and technical support technician based in Colombia.]">
+  <title>Nafer Cortes Aroca | Web Developer</title>
+  <meta name="description" content="Web development student interested in PHP, Laravel, MySQL and web application development.">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
 
-  <!-- ========================= HEADER ========================= -->
+  <!-- HEADER -->
   <div class="contenedor-header">
     <header>
       <div class="logo">
-        <!-- nafer -->
-        <a href="#inicio">nafer</a>
+        <a href="#inicio">Nafer</a>
       </div>
 
       <nav id="nav">
         <ul>
-          <li><a href="#inicio"     data-i18n="nav.home"      onclick="cerrarMenu()">INICIO</a></li>
-          <li><a href="#sobremi"    data-i18n="nav.about"     onclick="cerrarMenu()">SOBRE MÍ</a></li>
-          <li><a href="#skills"     data-i18n="nav.skills"    onclick="cerrarMenu()">SKILLS</a></li>
-          <li><a href="#curriculum" data-i18n="nav.resume"    onclick="cerrarMenu()">FORMACIÓN</a></li>
-          <li><a href="#portfolio"  data-i18n="nav.portfolio" onclick="cerrarMenu()">PROYECTOS</a></li>
-          <li><a href="#contacto"   data-i18n="nav.contact"   onclick="cerrarMenu()">CONTACTO</a></li>
+          <li><a href="#inicio" data-i18n="nav.home" onclick="cerrarMenu()">HOME</a></li>
+          <li><a href="#sobremi" data-i18n="nav.about" onclick="cerrarMenu()">ABOUT</a></li>
+          <li><a href="#skills" data-i18n="nav.skills" onclick="cerrarMenu()">SKILLS</a></li>
+          <li><a href="#curriculum" data-i18n="nav.resume" onclick="cerrarMenu()">RESUME</a></li>
+          <li><a href="#portfolio" data-i18n="nav.portfolio" onclick="cerrarMenu()">PROJECTS</a></li>
+          <li><a href="#contacto" data-i18n="nav.contact" onclick="cerrarMenu()">CONTACT</a></li>
         </ul>
       </nav>
 
       <div class="acciones-header">
-        <!-- LANGUAGE SWITCHER -->
-        <button id="btn-idioma"
-                class="btn-idioma"
-                type="button"
-                onclick="cambiarIdioma()"
-                aria-label="Switch to English">
-          <span class="idioma-activo">ES</span><span class="idioma-sep">/</span><span class="idioma-inactivo">EN</span>
+        <button id="btn-idioma" class="btn-idioma" type="button"
+          onclick="cambiarIdioma()" aria-label="Switch to Spanish">
+          <span class="idioma-activo">EN</span>
+          <span class="idioma-sep">/</span>
+          <span class="idioma-inactivo">ES</span>
         </button>
 
-        <button class="nav-responsive" type="button" onclick="mostrarOcultarMenu()" aria-label="Menu">
+        <button class="nav-responsive" type="button"
+          onclick="mostrarOcultarMenu()" aria-label="Menu">
           <i class="fa-solid fa-bars"></i>
         </button>
       </div>
     </header>
   </div>
 
-  <!-- ========================= HERO ========================= -->
+  <!-- HERO -->
   <section id="inicio" class="inicio">
     <div class="contenido-banner">
       <div class="contenedor-img">
-        <!-- [Replace profile.jpg with your own photo. Square image works best.] -->
-        <img src="images/profile.jpg" alt="Profile photo" onerror="this.style.display='none'">
+        <img src="images/profile.jpg" alt="Nafer Cortes Aroca">
       </div>
 
-      <!-- [nafer] -->
-      <h1>nafer cortes </h1>
-      <h2 data-i18n="hero.role">Desarrollador Web · Soporte Técnico</h2>
+      <h1>Nafer Cortes Aroca</h1>
+      <h2 data-i18n="hero.role">Web Developer · Programming Student</h2>
 
       <div class="redes">
-        <!-- [Replace the # with your real profile links. Delete the ones you do not use.] -->
-        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="mailto:[your.email@example.com]" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/nafercortesaroca"
+          target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/"
+          target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- ========================= ABOUT ========================= -->
+  <!-- ABOUT -->
   <section id="sobremi" class="sobremi">
     <div class="contenido-seccion">
-      <h2 data-i18n="about.title">Sobre Mí</h2>
+      <h2 data-i18n="about.title">About Me</h2>
 
       <p data-i18n="about.text">
-        [Escribe aquí dos o tres frases sobre ti.]
+        I am a web programming student interested in building useful web applications.
+        I am developing my skills in PHP, Laravel, MySQL and frontend development.
       </p>
 
       <div class="fila">
         <div class="col">
-          <h3 data-i18n="about.infoTitle">Información</h3>
-          <!--
-            SAFE FIELDS ONLY.
-            Do not add: home address, phone number, ID number, date of birth.
-          -->
+          <h3 data-i18n="about.infoTitle">Information</h3>
+
           <ul class="datos">
             <li>
-              <strong data-i18n="about.labelLocation">Ubicación</strong>
-              <span data-i18n="about.valueLocation">[Ciudad], Colombia</span>
+              <strong data-i18n="about.labelLocation">Location</strong>
+              <span data-i18n="about.valueLocation">Colombia</span>
             </li>
             <li>
-              <strong data-i18n="about.labelEmail">Correo</strong>
-              <span>[your.email@example.com]</span>
+              <strong data-i18n="about.labelEmail">Contact</strong>
+              <span>GitHub</span>
             </li>
             <li>
-              <strong data-i18n="about.labelLanguages">Idiomas</strong>
-              <span data-i18n="about.valueLanguages">Español (nativo) · Inglés ([nivel])</span>
+              <strong data-i18n="about.labelLanguages">Languages</strong>
+              <span data-i18n="about.valueLanguages">Spanish (native) · English (learning)</span>
             </li>
             <li>
-              <strong data-i18n="about.labelStatus">Disponibilidad</strong>
-              <span class="destacado" data-i18n="about.valueStatus">Abierto a prácticas</span>
+              <strong data-i18n="about.labelStatus">Availability</strong>
+              <span class="destacado" data-i18n="about.valueStatus">
+                Open to opportunities
+              </span>
             </li>
           </ul>
         </div>
 
         <div class="col">
-          <h3 data-i18n="about.interestsTitle">Intereses</h3>
+          <h3 data-i18n="about.interestsTitle">Interests</h3>
+
           <div class="contenedor-intereses">
-            <!-- [Change icons and labels. Keep between 4 and 6.] -->
             <div class="interes">
               <i class="fa-solid fa-code"></i>
-              <span data-i18n="interest.1">CÓDIGO</span>
+              <span data-i18n="interest.1">PROGRAMMING</span>
             </div>
             <div class="interes">
               <i class="fa-solid fa-headset"></i>
-              <span data-i18n="interest.2">SOPORTE</span>
+              <span data-i18n="interest.2">WEB DEVELOPMENT</span>
             </div>
             <div class="interes">
               <i class="fa-solid fa-book-open"></i>
-              <span data-i18n="interest.3">LECTURA</span>
+              <span data-i18n="interest.3">TECHNOLOGY</span>
             </div>
             <div class="interes">
               <i class="fa-solid fa-gamepad"></i>
-              <span data-i18n="interest.4">JUEGOS</span>
+              <span data-i18n="interest.4">LEARNING</span>
             </div>
           </div>
         </div>
@@ -152,111 +134,144 @@
     </div>
   </section>
 
-  <!-- ========================= SKILLS ========================= -->
-  <!--
-    To change a skill: edit the label, and edit data-percent.
-    The bar width and the number are both taken from data-percent,
-    so you only change it in ONE place.
-  -->
+  <!-- SKILLS -->
   <section id="skills" class="skills">
     <div class="contenido-seccion">
-      <h2 data-i18n="skills.title">Habilidades</h2>
+      <h2 data-i18n="skills.title">Skills</h2>
 
       <div class="fila">
         <div class="col">
-          <h3 data-i18n="skills.technical">Habilidades técnicas</h3>
+          <h3 data-i18n="skills.technical">Technical Skills</h3>
 
           <div class="skill">
             <span class="skill-nombre">HTML &amp; CSS</span>
-            <div class="barra-skill"><div class="progreso" data-percent="70"><span>70%</span></div></div>
+            <div class="barra-skill">
+              <div class="progreso" data-percent="70"><span>70%</span></div>
+            </div>
           </div>
+
           <div class="skill">
             <span class="skill-nombre">JavaScript</span>
-            <div class="barra-skill"><div class="progreso" data-percent="55"><span>55%</span></div></div>
+            <div class="barra-skill">
+              <div class="progreso" data-percent="55"><span>55%</span></div>
+            </div>
           </div>
+
+          <div class="skill">
+            <span class="skill-nombre">PHP</span>
+            <div class="barra-skill">
+              <div class="progreso" data-percent="60"><span>60%</span></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <span class="skill-nombre">Laravel</span>
+            <div class="barra-skill">
+              <div class="progreso" data-percent="55"><span>55%</span></div>
+            </div>
+          </div>
+
           <div class="skill">
             <span class="skill-nombre">MySQL</span>
-            <div class="barra-skill"><div class="progreso" data-percent="45"><span>45%</span></div></div>
+            <div class="barra-skill">
+              <div class="progreso" data-percent="60"><span>60%</span></div>
+            </div>
           </div>
+
           <div class="skill">
             <span class="skill-nombre">Git &amp; GitHub</span>
-            <div class="barra-skill"><div class="progreso" data-percent="60"><span>60%</span></div></div>
+            <div class="barra-skill">
+              <div class="progreso" data-percent="60"><span>60%</span></div>
+            </div>
           </div>
         </div>
 
         <div class="col">
-          <h3 data-i18n="skills.professional">Habilidades profesionales</h3>
+          <h3 data-i18n="skills.professional">Professional Skills</h3>
 
           <div class="skill">
-            <span class="skill-nombre" data-i18n="skill.support">Soporte al usuario</span>
-            <div class="barra-skill"><div class="progreso" data-percent="80"><span>80%</span></div></div>
+            <span class="skill-nombre" data-i18n="skill.support">User Support</span>
+            <div class="barra-skill">
+              <div class="progreso" data-percent="80"><span>80%</span></div>
+            </div>
           </div>
+
           <div class="skill">
-            <span class="skill-nombre" data-i18n="skill.teamwork">Trabajo en equipo</span>
-            <div class="barra-skill"><div class="progreso" data-percent="85"><span>85%</span></div></div>
+            <span class="skill-nombre" data-i18n="skill.teamwork">Teamwork</span>
+            <div class="barra-skill">
+              <div class="progreso" data-percent="85"><span>85%</span></div>
+            </div>
           </div>
+
           <div class="skill">
-            <span class="skill-nombre" data-i18n="skill.problem">Resolución de problemas</span>
-            <div class="barra-skill"><div class="progreso" data-percent="75"><span>75%</span></div></div>
+            <span class="skill-nombre" data-i18n="skill.problem">Problem Solving</span>
+            <div class="barra-skill">
+              <div class="progreso" data-percent="75"><span>75%</span></div>
+            </div>
           </div>
+
           <div class="skill">
-            <span class="skill-nombre" data-i18n="skill.english">Inglés técnico</span>
-            <div class="barra-skill"><div class="progreso" data-percent="65"><span>65%</span></div></div>
+            <span class="skill-nombre" data-i18n="skill.english">Technical English</span>
+            <div class="barra-skill">
+              <div class="progreso" data-percent="65"><span>65%</span></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========================= RESUME ========================= -->
+  <!-- RESUME -->
   <section id="curriculum" class="curriculum">
     <div class="contenido-seccion">
-      <h2 data-i18n="resume.title">Formación y experiencia</h2>
+      <h2 data-i18n="resume.title">Education and Experience</h2>
 
       <div class="fila">
-        <!-- EDUCATION -->
         <div class="col izquierda">
-          <h3 data-i18n="resume.education">Formación</h3>
+          <h3 data-i18n="resume.education">Education</h3>
 
           <div class="item izq">
-            <h4 data-i18n="edu.1.title">Técnico Profesional en Programación Web</h4>
+            <h4 data-i18n="edu.1.title">Professional Technician in Web Programming</h4>
             <span class="casa">UniEspinal</span>
-            <span class="fecha">[2025 - 2027]</span>
-            <p data-i18n="edu.1.text">[Una o dos frases sobre lo que aprendes aquí.]</p>
+            <span class="fecha">2025 – 2027</span>
+            <p data-i18n="edu.1.text">
+              I am learning programming, web development, databases and application development.
+            </p>
             <div class="conectori"><div class="circuloi"></div></div>
           </div>
 
           <div class="item izq">
-            <h4 data-i18n="edu.2.title">[Curso o certificación]</h4>
-            <span class="casa">[Institución]</span>
-            <span class="fecha">[Año]</span>
-            <p data-i18n="edu.2.text">[Qué aprendiste y para qué te sirve.]</p>
+            <h4 data-i18n="edu.2.title">Independent Learning</h4>
+            <span class="casa">Personal practice</span>
+            <span class="fecha">2026 – Present</span>
+            <p data-i18n="edu.2.text">
+              I practice web development through personal projects and programming exercises.
+            </p>
             <div class="conectori"><div class="circuloi"></div></div>
           </div>
         </div>
 
-        <!-- EXPERIENCE -->
         <div class="col derecha">
-          <h3 data-i18n="resume.experience">Experiencia</h3>
+          <h3 data-i18n="resume.experience">Experience</h3>
 
-          <!--
-            No work experience yet? That is normal.
-            Use academic projects, volunteer work or freelance jobs.
-            Describe what you DID, using action verbs: built, configured, fixed, tested.
-          -->
           <div class="item der">
-            <h4 data-i18n="exp.1.title">[Rol o tipo de proyecto]</h4>
-            <span class="casa">[Empresa, institución o proyecto propio]</span>
-            <span class="fecha">[Año]</span>
-            <p data-i18n="exp.1.text">[Qué hiciste, con qué herramientas y qué resultado tuvo.]</p>
+            <h4 data-i18n="exp.1.title">Web Developer – Personal Project</h4>
+            <span class="casa">Motorcycle Spare Parts Inventory Management System</span>
+            <span class="fecha">2026 – Present</span>
+            <p data-i18n="exp.1.text">
+              I am developing a web application to manage spare parts, customers,
+              suppliers, purchases and sales using Laravel, PHP, MySQL and Bootstrap.
+            </p>
             <div class="conectord"><div class="circulod"></div></div>
           </div>
 
           <div class="item der">
-            <h4 data-i18n="exp.2.title">[Rol o tipo de proyecto]</h4>
-            <span class="casa">[Empresa, institución o proyecto propio]</span>
-            <span class="fecha">[Año]</span>
-            <p data-i18n="exp.2.text">[Qué hiciste, con qué herramientas y qué resultado tuvo.]</p>
+            <h4 data-i18n="exp.2.title">Academic Web Development Projects</h4>
+            <span class="casa">UniEspinal</span>
+            <span class="fecha">2026</span>
+            <p data-i18n="exp.2.text">
+              I build and test web pages while practicing HTML, CSS, JavaScript and responsive design.
+            </p>
             <div class="conectord"><div class="circulod"></div></div>
           </div>
         </div>
@@ -264,85 +279,80 @@
     </div>
   </section>
 
-  <!-- ========================= PORTFOLIO ========================= -->
-  <!--
-    This is the most important section for a junior developer.
-    Three finished small projects are better than ten unfinished ones.
-    Every card should link to the live project or to its repository.
-  -->
+  <!-- PROJECTS -->
   <section id="portfolio" class="portfolio">
     <div class="contenido-seccion">
-      <h2 data-i18n="portfolio.title">Proyectos</h2>
+      <h2 data-i18n="portfolio.title">Projects</h2>
 
       <div class="galeria">
-        <a class="proyecto" href="#" target="_blank" rel="noopener">
-          <img src="images/project-1.png" alt="Project 1" onerror="this.style.opacity=0">
+        <a class="proyecto" href="https://github.com/nafercortesaroca"
+          target="_blank" rel="noopener">
+          <img src="images/inventario-moto.png"
+            alt="Motorcycle Spare Parts Inventory Management System">
           <div class="overlay">
-            <h3 data-i18n="project.1.title">[Nombre del proyecto]</h3>
-            <p data-i18n="project.1.text">[Tecnologías usadas]</p>
+            <h3 data-i18n="project.1.title">
+              Motorcycle Spare Parts Inventory Management System
+            </h3>
+            <p data-i18n="project.1.text">Laravel · PHP · MySQL · Bootstrap 5</p>
           </div>
         </a>
 
-        <a class="proyecto" href="#" target="_blank" rel="noopener">
-          <img src="images/project-2.png" alt="Project 2" onerror="this.style.opacity=0">
+        <a class="proyecto" href="https://github.com/nafercortesaroca"
+          target="_blank" rel="noopener">
+          <img src="images/project-2.png" alt="Academic web project">
           <div class="overlay">
-            <h3 data-i18n="project.2.title">[Nombre del proyecto]</h3>
-            <p data-i18n="project.2.text">[Tecnologías usadas]</p>
+            <h3 data-i18n="project.2.title">Academic Web Projects</h3>
+            <p data-i18n="project.2.text">HTML · CSS · JavaScript</p>
           </div>
         </a>
 
-        <a class="proyecto" href="#" target="_blank" rel="noopener">
-          <img src="images/project-3.png" alt="Project 3" onerror="this.style.opacity=0">
+        <a class="proyecto" href="https://github.com/nafercortesaroca"
+          target="_blank" rel="noopener">
+          <img src="images/project-3.png" alt="Programming practice project">
           <div class="overlay">
-            <h3 data-i18n="project.3.title">[Nombre del proyecto]</h3>
-            <p data-i18n="project.3.text">[Tecnologías usadas]</p>
+            <h3 data-i18n="project.3.title">Programming Practice</h3>
+            <p data-i18n="project.3.text">PHP · MySQL</p>
           </div>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ========================= CONTACT ========================= -->
-  <!--
-    A contact form needs a server to work. This template uses direct links
-    instead, so nothing here is decorative: every button really does something.
-  -->
+  <!-- CONTACT -->
   <section id="contacto" class="contacto">
     <div class="contenido-seccion">
-      <h2 data-i18n="contact.title">Contacto</h2>
+      <h2 data-i18n="contact.title">Contact</h2>
+
       <p class="contacto-intro" data-i18n="contact.intro">
-        [Una frase invitando a escribirte.]
+        Do you have an opportunity or a project in mind? Contact me through GitHub.
       </p>
 
       <div class="tarjetas-contacto">
-        <a class="tarjeta" href="mailto:[your.email@example.com]">
-          <i class="fa-solid fa-envelope"></i>
-          <strong data-i18n="contact.emailLabel">Correo</strong>
-          <span>[your.email@example.com]</span>
-        </a>
-
-        <a class="tarjeta" href="#" target="_blank" rel="noopener">
+        <a class="tarjeta" href="https://github.com/nafercortesaroca"
+          target="_blank" rel="noopener">
           <i class="fa-brands fa-github"></i>
           <strong>GitHub</strong>
-          <span>[github.com/tu-usuario]</span>
+          <span>github.com/nafercortesaroca</span>
         </a>
 
-        <a class="tarjeta" href="#" target="_blank" rel="noopener">
+        <a class="tarjeta" href="https://www.linkedin.com/"
+          target="_blank" rel="noopener">
           <i class="fa-brands fa-linkedin-in"></i>
           <strong>LinkedIn</strong>
-          <span data-i18n="contact.linkedinValue">[Tu perfil profesional]</span>
+          <span data-i18n="contact.linkedinValue">LinkedIn profile</span>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ========================= FOOTER ========================= -->
+  <!-- FOOTER -->
   <footer>
     <a href="#inicio" class="arriba" aria-label="Back to top">
       <i class="fa-solid fa-angles-up"></i>
     </a>
+
     <p class="footer-nota" data-i18n="footer.note">
-      [Tu nombre] · Técnico Profesional en Programación Web · UniEspinal
+      Nafer Cortes Aroca · Web Programming Student · UniEspinal
     </p>
   </footer>
 
